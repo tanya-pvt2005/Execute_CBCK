@@ -1,4 +1,4 @@
-.login {
+.register {
     max-width: 40%;
     margin: auto;
     margin-top: 3.3em;
@@ -6,6 +6,6 @@
     /* border: 2px solid red; */
 }
 
-.login h1 {
+.register h1 {
     padding: 1em;
 }

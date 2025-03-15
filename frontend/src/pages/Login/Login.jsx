@@ -7,7 +7,7 @@ function Login() {
   return (
     <div className="login">
       <h1>Login</h1>
-      <Form className="container" action="http://localhost:5000/users/register" method="POST">
+      <Form className="container" action="http://localhost:5000/users/login" method="POST">
         <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
             <Form.Control type="email" name="email" placeholder="Enter email" required />

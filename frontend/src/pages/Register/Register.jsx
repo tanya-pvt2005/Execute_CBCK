@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import "./Register.css";
 
 function Register() {
   return (
-    <div className="login">
+    <div className="register">
       <h1>Register</h1>
 
       <Form className="container" action="http://localhost:5000/users/register" method="POST">

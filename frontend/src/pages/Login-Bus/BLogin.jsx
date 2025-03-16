@@ -5,22 +5,13 @@ import Form from 'react-bootstrap/Form';
 
 function BLogin() {
   return (
-    <div className="login">
-      <h1>Login</h1>
-      <Form className="container" action="http://localhost:5000/users/login" method="POST">
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Email address</Form.Label>
-            <Form.Control type="email" name="email" placeholder="Enter email" required />
-        </Form.Group>
+    <div className="register">
+      <h1>Register</h1>
 
-        <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Label>Password</Form.Label>
-            <Form.Control type="password" name="password" placeholder="Password" required/>
-        </Form.Group>
-        <Button variant="primary" type="submit">
-            Login
-        </Button>
-    </Form>
+      <Link to="/userRegister">Register as user</Link>
+      <br />
+      <Link to="/businessRegister">Register as business</Link>
+      <br />
 
       <div className="register">
         <p>Don't have an account? </p>

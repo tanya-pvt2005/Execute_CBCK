@@ -1,57 +1,27 @@
-/* this is for global styling the webpage */
-/* General styling */
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* Apply Font Globally */
 body {
-    font-family: 'Poppins', sans-serif;
-   
-    text-align: center;
-    padding: 0;
-    margin: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Landing Page Container */
-.landing {
-    margin: 100px auto;
-    max-width: 80%;
-    padding: 40px;
-    background: rgba(255, 255, 255, 0.1); /* Transparent white for contrast */
-    border-radius: 20px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+/* Optional: Apply Different Font Weights */
+.ibm-plex-light {
+  font-weight: 300;
 }
 
-.landing h1 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color:rgb(4, 4, 70);
+.ibm-plex-regular {
+  font-weight: 400;
 }
 
-.landing p {
-    font-size: 18px;
-    line-height: 1.6;
-    max-width: 700px;
-    color:black;
-    margin: 0 auto;
+.ibm-plex-bold {
+  font-weight: 700;
 }
 
-/* Button Styling */
-button {
-    display: inline-block;
-    font-size: 18px;
-    font-weight: bold;
-    margin: 20px 10px;
-    padding: 12px 24px;
-   
-    border: none;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-    
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+.ibm-plex-italic {
+  font-style: italic;
 }

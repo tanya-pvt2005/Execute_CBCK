@@ -1,20 +1,16 @@
 import { Link } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import "./Register.css";
 
-function Register() {
+
+function ULogin() {
   return (
-    <div className="register">
-      <h1>Register</h1>
-
-      <Form className="container" action="http://localhost:5000/users/register" method="POST">
+    <div className="login">
+      <h1>Login</h1>
+      <Form className="container" action="http://localhost:5000/users/login" method="POST">
         <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
-            <Form.Control type="email" name="email" placeholder="Enter email" required/>
-            <Form.Text className="text-muted">
-            We'll never share your email with anyone else.
-            </Form.Text>
+            <Form.Control type="email" name="email" placeholder="Enter email" required />
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -22,9 +18,14 @@ function Register() {
             <Form.Control type="password" name="password" placeholder="Password" required/>
         </Form.Group>
         <Button variant="primary" type="submit">
-            Register
+            Login
         </Button>
     </Form>
+
+      <div className="register">
+        <p>Don't have an account? </p>
+        <Link to="/register">Register</Link>
+      </div>
 
       <Link to="/dashboard">
         <button className="btn">Dashboard</button>
@@ -33,4 +34,4 @@ function Register() {
   );
 }
 
-export default Register;
+export default ULogin;

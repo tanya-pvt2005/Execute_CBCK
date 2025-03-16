@@ -1,43 +1,118 @@
-.navbar {
-  background-color: white;
-  padding: 12px 24px;
+
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
+.custom-navbar {
   display: flex;
-  align-items: center;
+  align-items: center; /* Ensures vertical centering */
   justify-content: space-between;
-  border-radius: 50px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  max-width: 90%;
-  margin: 20px auto;
+  padding: 0.8rem 2rem;
+  width: 90%;
+  position: absolute;
+  top:10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  border-radius: 3rem;
+  box-shadow: 5px 5px 8px rgb(184, 182, 182);
+  height: 4rem; /* Ensure navbar and logo container are the same height */
 }
 
-.navbar h1 {
-  font-size: 24px;
-  color: #333;
-  font-weight: bold;
-  margin: 0;
+/* Logo and Brand */
+.custom-logo-container {
+  display: flex;
+  align-items: center; /* Ensures logo and text align vertically */
+  justify-content: center;
+  height: 100%; /* Matches navbar height */
+  width: auto;
 }
 
-.navbar ul {
+.custom-logo {
+  max-height: 100%; /* Prevents overflow, keeping it properly aligned */
+  width: auto; /* Maintain aspect ratio */
+  
+}
+
+ul.custom-nav-links{
+  margin-top: 10px;
+}
+
+.custom-brand {
+  font-size: 1.8rem;
+  margin-top: 15px;
+  font-family: "Vollkorn", serif;
+  display: flex;
+  align-items: center; /* Ensures vertical centering */
+  height: 100%; /* Matches navbar height */
+  line-height: 1; /* Prevents extra spacing */
+}
+
+
+/* Navigation Links */
+.custom-nav-links {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 1.5rem;
+  align-items: center; /* Ensures vertical centering */
   margin: 0;
   padding: 0;
 }
 
-.navbar ul li {
-  display: inline;
-}
-
-.navbar ul li a {
+.custom-nav-links li a {
   text-decoration: none;
   color: #333;
-  font-size: 18px;
-  padding: 10px 20px;
-  border-radius: 25px;
-  transition: 0.3s ease-in-out;
+  font-size: 1.1em;
+  font-weight: 100px;
+  transition: color 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
 }
 
-.navbar ul li a:hover {
-  background-color: rgba(0, 0, 0, 0.05);
+.custom-nav-links li a:hover {
+  color: #007bff;
+}
+
+/* 📱 Mobile Responsive */
+@media screen and (max-width: 48em) {
+  .custom-navbar {
+    height: 3.5rem; /* Adjusted for smaller screens */
+    padding: 0.5rem 1.5rem;
+  }
+
+  .custom-logo-container {
+    height: 3.5rem;
+  }
+
+  .custom-logo {
+    max-height: 70%;
+  }
+
+  .custom-nav-links {
+    gap: 1rem;
+  }
+
+  .custom-nav-links li a {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 30em) {
+  .custom-navbar {
+    height: 3.2rem;
+    padding: 0.4rem 1rem;
+  }
+
+  .custom-logo-container {
+    height: 3.2rem;
+  }
+
+  .custom-logo {
+    max-height: 65%;
+  }
+
+  .custom-nav-links {
+    gap: 0.8rem;
+  }
+
+  .custom-nav-links li a {
+    font-size: 0.85rem;
+  }
 }

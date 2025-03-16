@@ -1,28 +1,67 @@
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
-import "./Landing.css"
+import "./Landing.css";
+import girl from "../../assets/girl.png";
 
-function Landing(){
-    return(
-        <>
-            <Navbar/>
-            <div className="landing">
-                <h1>Welcome to our project for EXECUTE DTU</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit sint qui, vel nisi officia quibusdam aliquam dolores minus eum laudantium?</p>
+import community from "../../assets/community.jpg";
+import business from "../../assets/business.jpg";
+import customer from "../../assets/customer.jpg"
+
+function Landing() {
+  return (
+    <>
+      <Navbar />
+
+      <div className="title">
+        <div className="heading-cont">
+          <h1>Connecting YOU to BUSINESSES</h1>
+          <br></br>
+          <p>
+            Bridging the gap between you and businesses by transforming your
+            valuable feedback into powerful insights that drive growth and
+            innovation.
+          </p>
+          <br></br>
+          <button className="button1">Watch Tutorial</button>
+          <button className="dotted">Login Now</button>
+        </div>
+        <div className="image">
+          <img src={girl} alt="luna-astronaut" className="luna-astro" />
+        </div>
+      </div>
+
+      <div className="about">
+        <h2 className="about-title">We Make it Possible</h2>
+        <div className="about-container">
+          {/* Card 1 */}
+          <div className="about-card">
+            <div className="about-image">
+            <img src={customer} alt="luna-astronaut" className="luna-astro" />
             </div>
-            {/* nav buttons */}
+            <p className="about-text">Seamless Collection of your feedback so that you feel heard by your favorite brands anytime, anywhere, ON THE GO!</p>
+          </div>
 
-            <Link to ="/login">
-                <button className = "btn">LOGIN</button>            
-            </Link>
-            <Link to ="/blogs">
-                <button className = "btn">BLOGS</button>            
-            </Link>
-            <Link to ="/page2">
-                <button className = "btn">PAGE2</button>            
-            </Link>
-        </>
-    )
+          {/* Card 2 */}
+          <div className="about-card">
+            <div className="about-image">
+            <img src={community} alt="luna-astronaut" className="luna-astro" />
+
+            </div>
+            <p className="about-text">Community insights to discuss and review your favorite products with full anonymity as per your choice! </p>
+          </div>
+
+          {/* Card 3 */}
+          <div className="about-card">
+            <div className="about-image">
+            <img src={business} alt="luna-astronaut" className="luna-astro" />
+
+            </div>
+            <p className="about-text">Helping businesses gain insights from your valuable OPINIONS!</p>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
 
 export default Landing;

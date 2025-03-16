@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import "./Login.css";
 
-function Login() {
+
+function BLogin() {
   return (
     <div className="login">
       <h1>Login</h1>
@@ -34,4 +34,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default BLogin;

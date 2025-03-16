@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import "./Dashboard.css";
 
-function Dashboard() {
+
+function UserDash() {
   return (
-    <div className="dashboard">
+    <div className="user-dashboard">
       <h1>Dashboard</h1>
       <p>Welcome to your dashboard!</p>
 
@@ -18,4 +18,4 @@ function Dashboard() {
   );
 }
 
-export default Dashboard;
+export default UserDash;

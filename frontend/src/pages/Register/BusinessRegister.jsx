@@ -138,6 +138,7 @@ function BusinessRegister() {
     <>
       <Navbar />
       <div className="business-register-container">
+        <div className="register-left">
         <h2>Business Registration</h2>
         {error && <Alert variant="danger">{error}</Alert>} {/* Use Alert for error messages */}
         <Form onSubmit={handleRegister}>
@@ -186,8 +187,13 @@ function BusinessRegister() {
           </Button>
         </Form>
         <p className="mt-3">
-          Already have an account? <Link to="/business-login">Login here</Link>.
+          Already have an account? <Link to="/user-login">Login here</Link>.
         </p>
+        </div>
+
+        <div className="register-right">
+          {/* hello */}
+        </div>
       </div>
     </>
   );

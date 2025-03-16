@@ -14,9 +14,9 @@
     margin: 20px auto;
     max-width: 400px;
     padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* border: 1px solid #ddd; */
+    /* border-radius: 8px; */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
     text-align: left;
   }
   
@@ -38,4 +38,35 @@
     margin: 10px;
     padding: 10px 20px;
     font-size: 1rem;
+  }
+
+  .user-register {
+    display: flex;
+    width: 900px;
+  }
+
+  .user-register-left {
+    width: 70%;
+  }
+
+  .user-register-right {
+    width: 50%;
+    background-color: red;
+    background: url('https://img.freepik.com/premium-vector/person-with-green-blue-logo-that-says-name_1076610-66914.jpg') no-repeat center/cover;
+  }
+
+  .user-register-btn {
+    margin: 10px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    color: white;
+    border-radius: 1rem;
+    height:50px;
+    /* border: 2px solid transparent; */
+    background: linear-gradient(to right, #5eae21, #70dd12);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-right: 15px;
+    font-weight: bold;
+    border:none;
   }

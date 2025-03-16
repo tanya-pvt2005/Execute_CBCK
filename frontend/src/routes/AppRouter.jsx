@@ -4,6 +4,7 @@ import ULogin from "../pages/Login-User/ULogin"
 import BLogin from "../pages/Login-Bus/BLogin"
 import Community from "../pages/Community/Community"
 import UserDash from "../pages/userDash/UserDash"
+import Feedback from "../pages/Feedback/Feedback"
 import BusDash from "../pages/busDash/BusDash"
 import BusinessDashboard from "../pages/Dashboard/BusinessDashboard"
 
@@ -18,6 +19,7 @@ function AppRouter(){
                 <Route path = "/user-dashboard" element={<UserDash/>} />
                 <Route path = "/businessDashboard" element={<BusinessDashboard/>} />
                 <Route path = "/community" element={<Community/>} />
+                <Route path = "/feedback" element={<Feedback/>} />
             </Routes>   
         </Router>     
         </>

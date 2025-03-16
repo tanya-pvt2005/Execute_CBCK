@@ -1,41 +1,60 @@
-.user-dashboard-container {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .user-dashboard-container h2 {
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  .user-info-card {
-    margin: 20px auto;
-    max-width: 400px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: left;
-  }
-  
-  .user-info-card .card-title {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-  }
-  
-  .user-info-card .card-text {
-    font-size: 1.1rem;
-    margin-bottom: 15px;
-  }
-  
-  .dashboard-actions {
-    margin-top: 20px;
-  }
-  
-  .dashboard-actions .btn {
-    margin: 10px;
-    padding: 10px 20px;
+/* UserDashboard.css */
+body {
+  background-color: #f8f9fa;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #165839;
+}
+
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #165839;
+}
+
+.btn-primary {
+  background-color: #165839;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #12472d;
+}
+
+.alert {
+  border-radius: 8px;
+}
+
+.container {
+  margin-top: 6em;
+}
+
+.submit-review-btn {
+  margin: 10px;
+    padding: 12px 30px;
     font-size: 1rem;
-  }
+    color: white;
+    border-radius: 1rem;
+    height:50px;
+    /* border: 2px solid transparent; */
+    background: linear-gradient(to right, #5eae21, #70dd12);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-right: 15px;
+    font-weight: bold;
+    border:none;
+}

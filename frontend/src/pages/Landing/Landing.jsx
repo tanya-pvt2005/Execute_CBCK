@@ -2,10 +2,11 @@ import { Link } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import "./Landing.css";
 import girl from "../../assets/girl.png";
-
+import FAQ from "../../components/FAQ/FAQ"
 import community from "../../assets/community.jpg";
 import business from "../../assets/business.jpg";
 import customer from "../../assets/customer.jpg"
+import Footer from "../../components/Footer/Footer";
 
 function Landing() {
   return (
@@ -14,7 +15,8 @@ function Landing() {
 
       <div className="title">
         <div className="heading-cont">
-          <h1>Connecting YOU to BUSINESSES</h1>
+          <h1>Connecting you to <span className="bus">
+            <br></br>BUSINESSES</span></h1>
           <br></br>
           <p>
             Bridging the gap between you and businesses by transforming your
@@ -22,8 +24,8 @@ function Landing() {
             innovation.
           </p>
           <br></br>
-          <button className="button1">Watch Tutorial</button>
-          <button className="dotted">Login Now</button>
+          <Link to="/user-login"><button className="button1">Consumer Login</button></Link>
+          <Link to="/business-login"><button className="dotted">Business Login</button></Link>
         </div>
         <div className="image">
           <img src={girl} alt="luna-astronaut" className="luna-astro" />
@@ -31,7 +33,7 @@ function Landing() {
       </div>
 
       <div className="about">
-        <h2 className="about-title">We Make it Possible</h2>
+        <h2 className="about-title">We Make it <span className="bus">Possible</span></h2>
         <div className="about-container">
           {/* Card 1 */}
           <div className="about-card">
@@ -56,10 +58,13 @@ function Landing() {
             <img src={business} alt="luna-astronaut" className="luna-astro" />
 
             </div>
-            <p className="about-text">Helping businesses gain insights from your valuable OPINIONS!</p>
+            <p className="about-text">Helping businesses gain insights from your valuable opinions, driving smarter decisions and creating better customer experiences!</p>
           </div>
         </div>
       </div>
+
+      <FAQ/>
+      <Footer/>
     </>
   );
 }

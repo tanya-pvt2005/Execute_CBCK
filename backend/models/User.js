@@ -4,7 +4,14 @@ const userSchema = new mongoose.Schema({
     email: {type: String, unique: true, required: true},
     password: {type: String, required: true},
     username: {type: String},
-    reviewsPosted: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Review'}],
+    reviews: [
+        {
+          companyName: { type: String, required: true },
+          companyEmail: { type: String, required: true },
+          review: { type: String, required: true },
+          createdAt: { type: Date, default: Date.now },
+        },
+      ],
     isAnonymous: {type: Boolean, default: false},
 })
 

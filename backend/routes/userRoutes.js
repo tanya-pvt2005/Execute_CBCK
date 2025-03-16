@@ -2,6 +2,7 @@ const express = require('express');
 const app=express();
 const router = express.Router();
 const User = require("../models/User");
+const Business = require("../models/Business")
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
@@ -59,6 +60,7 @@ router.post("/login", async (req, res)=> {
     });
 });
 
+// user profile
 router.get('/profile', authenticateUser, async(req, res) => {
     console.log(req.user)
     try {
@@ -72,6 +74,30 @@ router.get('/profile', authenticateUser, async(req, res) => {
       }
 });
 
+// submit review
+router.post('/submitReview', authenticateUser, async (req, res) => {
+    const { companyName, companyEmail, review } = req.body;
+    const userId = req.user.id; // Assuming user ID is available from authentication middleware
+  
+    try {
+      // Add review to user's review history
+      await User.findByIdAndUpdate(userId, {
+        $push: { reviews: { companyName, companyEmail, review } },
+      });
+  
+      // Add review to company's review list
+      await Business.findOneAndUpdate(
+        { email: companyEmail },
+        { $push: { reviews: { userId, review } } },
+        { upsert: true } // Create the company if it doesn't exist
+      );
+  
+      res.json({ message: 'Review submitted successfully!' });
+    } catch (err) {
+      console.error('Failed to submit review:', err);
+      res.status(500).json({ message: 'Failed to submit review' });
+    }
+  });
 
 router.get("/register", async (req, res)=>{
     res.send("hello there")

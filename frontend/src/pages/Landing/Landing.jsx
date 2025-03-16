@@ -24,8 +24,10 @@ function Landing() {
             innovation.
           </p>
           <br></br>
+          <div className="buttons">
           <Link to="/user-login"><button className="button1">Consumer Login</button></Link>
           <Link to="/business-login"><button className="dotted">Business Login</button></Link>
+          </div>
         </div>
         <div className="image">
           <img src={girl} alt="luna-astronaut" className="luna-astro" />

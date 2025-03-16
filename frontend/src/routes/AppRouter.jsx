@@ -6,6 +6,10 @@ import Community from "../pages/Community/Community"
 import UserDash from "../pages/userDash/UserDash"
 import BusDash from "../pages/busDash/BusDash"
 import BusinessDashboard from "../pages/Dashboard/BusinessDashboard"
+import Register from "../pages/Register/Register"
+import BusinessRegister from "../pages/Register/BusinessRegister"
+import UserRegister from "../pages/Login-Bus/UserRegister"
+import UserDashboard from "../pages/Dashboard/userDashboard"
 
 function AppRouter(){
     return(
@@ -13,10 +17,12 @@ function AppRouter(){
         <Router>
             <Routes>
                 <Route path = "/" element={<Landing/>} />
-                {/* <Route path = "/login" element={<Login/>} /> */}
+                <Route path = "/register" element={<Register/>} />
+                <Route path = "/business-register" element={<BusinessRegister/>} />
+                <Route path = "/user-register" element={<UserRegister/>} />
                 <Route path = "/user-login" element={<Login/>} />
                 <Route path = "/business-login" element={<BLogin/>} />
-                <Route path = "/user-dashboard" element={<UserDash/>} />
+                <Route path = "/userDashboard" element={<UserDashboard/>} />
                 <Route path = "/businessDashboard" element={<BusinessDashboard/>} />
                 <Route path = "/community" element={<Community/>} />
             </Routes>   

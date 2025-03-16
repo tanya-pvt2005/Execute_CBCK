@@ -16,7 +16,7 @@ function AppRouter(){
                 <Route path = "/user-login" element={<ULogin/>} />
                 <Route path = "/business-login" element={<BLogin/>} />
                 <Route path = "/user-dashboard" element={<UserDash/>} />
-                <Route path = "/business-dashboard" element={<BusinessDashboard/>} />
+                <Route path = "/businessDashboard" element={<BusinessDashboard/>} />
                 <Route path = "/community" element={<Community/>} />
             </Routes>   
         </Router>     

@@ -27,6 +27,10 @@ body{
     font-weight: bold;
     border:none;
   }
+
+  .buttons {
+    display: flex;
+  }
   
   /* Dotted Button */
   .dotted {

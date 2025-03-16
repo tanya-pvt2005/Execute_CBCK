@@ -1,0 +1,29 @@
+.login {
+    max-width: 40%;
+    margin: auto;
+    margin-top: 6em;
+
+    padding: 1em;
+
+    text-align: center;
+}
+
+.login h1 {
+    padding: 1em;
+}
+
+.loginButton {
+    margin: 10px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    color: white;
+    border-radius: 1rem;
+    height:50px;
+    /* border: 2px solid transparent; */
+    background: linear-gradient(to right, #5eae21, #70dd12);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-right: 15px;
+    font-weight: bold;
+    border:none;
+}

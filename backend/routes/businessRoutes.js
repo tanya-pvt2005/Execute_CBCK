@@ -82,7 +82,7 @@ router.get('/topReviews', authenticateBusiness, async (req, res) => {
       // Sort reviews by createdAt (most recent first) and get the top 5
       const topReviews = business.reviews
         .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)) // Sort by most recent
-        .slice(0, 5); // Get top 5 reviews
+        // .slice(0, 5); // Get top 5 reviews
   
       res.json(topReviews);
     } catch (err) {

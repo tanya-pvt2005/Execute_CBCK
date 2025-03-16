@@ -4,7 +4,7 @@ import Login from "../pages/Login/Login"
 import BLogin from "../pages/Login-Bus/BLogin"
 import Community from "../pages/Community/Community"
 import UserDash from "../pages/userDash/UserDash"
-import Feedback from "../pages/Feedback/Feedback"
+import FeedbackForm from "../pages/Feedback/FeedbackForm"
 import BusDash from "../pages/busDash/BusDash"
 import BusinessDashboard from "../pages/Dashboard/BusinessDashboard"
 import Register from "../pages/Register/Register"
@@ -26,7 +26,7 @@ function AppRouter(){
                 <Route path = "/userDashboard" element={<UserDashboard/>} />
                 <Route path = "/businessDashboard" element={<BusinessDashboard/>} />
                 <Route path = "/community" element={<Community/>} />
-                <Route path = "/feedback" element={<Feedback/>} />
+                <Route path = "/feedback" element={<FeedbackForm/>} />
             </Routes>   
         </Router>     
         </>

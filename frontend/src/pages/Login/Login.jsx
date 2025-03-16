@@ -3,7 +3,8 @@ import { Link, useNavigate } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import axios from 'axios';
-// import './Login.css';
+import Navbar from '../../components/Navbar/Navbar';
+import './Login.css';
 
 function Login() {
   const [email, setEmail] = useState('');
@@ -39,6 +40,8 @@ function Login() {
   };
 
   return (
+    <>
+    <Navbar/>
     <div className="login">
       <h1>Login</h1>
       <Form className="container" onSubmit={handleSubmit}>
@@ -88,6 +91,7 @@ function Login() {
         <Link to="/register">Register</Link>
       </div>
     </div>
+    </>
   );
 }
 

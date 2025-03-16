@@ -1,7 +1,7 @@
 .login {
     max-width: 60%;
     margin: auto;
-    margin-top: 7em;
+    margin-top: 0em;
 
     /* border: 2px solid red; */
 
@@ -13,6 +13,12 @@
     justify-content: space-between;
     /* align-items: center; */
     
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
 }
 
 .loginButton {
@@ -32,11 +38,18 @@
 }
 
 .login-left {
+    display: flex;
+    flex-direction: column;
     width: 50%;
 }
 
 .login-right {
+    margin-top: 200px;
     width: 40%;
     /* background-color: red; */
     background: url('https://img.freepik.com/premium-vector/person-with-green-blue-logo-that-says-name_1076610-66914.jpg') no-repeat center/cover;
+}
+
+.register {
+    margin-top: -200px;
 }

@@ -16,22 +16,21 @@ const Feedback = () => {
   };
 
   return (
-    <div id="feedback-container" className="feedback-container">
-      <h2 id="feedback-title">Feedback Form</h2>
-      <form id="feedback-form" onSubmit={handleSubmit}>
-        <div className="form-group" id="name-group">
-          <label htmlFor="name-input">Your Name (Optional):</label>
+    <div className="feedback-container">
+      <h2>Feedback Form</h2>
+      <form onSubmit={handleSubmit}>
+        <div className="form-group">
+          <label>Your Name (Optional):</label>
           <input
-            id="name-input"
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder="Leave blank to remain anonymous"
           />
         </div>
-        <div className="form-group" id="price-group">
-          <label htmlFor="price-select">Price (1-5):</label>
-          <select id="price-select" value={price} onChange={(e) => setPrice(e.target.value)}>
+        <div className="form-group">
+          <label>Price (1-5):</label>
+          <select value={price} onChange={(e) => setPrice(e.target.value)}>
             {[1, 2, 3, 4, 5].map((num) => (
               <option key={num} value={num}>
                 {num} - {num === 5 ? 'Excellent' : ''}
@@ -39,9 +38,9 @@ const Feedback = () => {
             ))}
           </select>
         </div>
-        <div className="form-group" id="quality-group">
-          <label htmlFor="quality-select">Quality (1-5):</label>
-          <select id="quality-select" value={quality} onChange={(e) => setQuality(e.target.value)}>
+        <div className="form-group">
+          <label>Quality (1-5):</label>
+          <select value={quality} onChange={(e) => setQuality(e.target.value)}>
             {[1, 2, 3, 4, 5].map((num) => (
               <option key={num} value={num}>
                 {num} - {num === 5 ? 'Excellent' : ''}
@@ -49,9 +48,9 @@ const Feedback = () => {
             ))}
           </select>
         </div>
-        <div className="form-group" id="service-group">
-          <label htmlFor="service-select">Service (1-5):</label>
-          <select id="service-select" value={service} onChange={(e) => setService(e.target.value)}>
+        <div className="form-group">
+          <label>Service (1-5):</label>
+          <select value={service} onChange={(e) => setService(e.target.value)}>
             {[1, 2, 3, 4, 5].map((num) => (
               <option key={num} value={num}>
                 {num} - {num === 5 ? 'Excellent' : ''}
@@ -59,16 +58,15 @@ const Feedback = () => {
             ))}
           </select>
         </div>
-        <div className="form-group" id="comments-group">
-          <label htmlFor="comments-textarea">Additional Comments:</label>
+        <div className="form-group">
+          <label>Additional Comments:</label>
           <textarea
-            id="comments-textarea"
             value={comments}
             onChange={(e) => setComments(e.target.value)}
             placeholder="Your feedback..."
           />
         </div>
-        <button id="submit-button" type="submit">Submit Feedback</button>
+        <button type="submit">Submit Feedback</button>
       </form>
     </div>
   );

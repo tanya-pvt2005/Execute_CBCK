@@ -11,8 +11,8 @@ function Navbar() {
       </div>
       <ul className="custom-nav-links">
         <li><Link to="/">Home</Link></li>
-        <li><Link to="/blogs">About</Link></li>
-        <li><Link to="/login">Services</Link></li>
+        <li><Link to="/">About</Link></li>
+        <li><Link to="/feedback">Feedback</Link></li>
         <li><Link to="/">Contact</Link></li>
       </ul>
     </nav>

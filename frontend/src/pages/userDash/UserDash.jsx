@@ -1,20 +1,27 @@
-import { Link } from "react-router-dom";
-
+import Sidebar from "../../components/Sidebar/Sidebar";
+import BrandCards from "../../components/Brands/BrandCards";
+// import Profile from "../../components/Profile/Profile";
+import "./UserDash.css";
 
 function UserDash() {
   return (
-    <div className="user-dashboard">
-      <h1>Dashboard</h1>
-      <p>Welcome to your dashboard!</p>
 
-      <Link to="/page1">
-        <button className="btn">Go to Page 1</button>
-      </Link>
+    <>
+    <div className="user-dash">
+      {/* Sidebar - Fixed Position */}
+      <Sidebar />
 
-      <Link to="/">
-        <button className="btn">Go to Landing</button>
-      </Link>
+      {/* Main Content Section */}
+      <div className="main-content">
+        <h1 id="heading">Welcome <span id="bus">User</span> </h1>
+        <BrandCards />
+      </div>
     </div>
+
+    {/* <Profile/> */}
+
+
+    </>
   );
 }
 

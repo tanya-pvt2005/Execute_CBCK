@@ -1,0 +1,30 @@
+.user-dash {
+  display: flex;
+  height: 100vh; /* Full height */
+}
+
+/* Sidebar should remain fixed */
+.user-dash .sidebar {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+#bus{
+  color:rgb(101, 14, 37);
+  font-weight:bolder;
+}
+/* Main content should scroll */
+.main-content {
+  margin-left: 260px; /* Ensure space for sidebar */
+  padding: 20px;
+  width: calc(100% - 260px);
+  overflow-y: auto;
+  height: 100vh;
+}
+
+

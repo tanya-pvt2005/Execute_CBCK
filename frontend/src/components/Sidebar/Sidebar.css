@@ -1,0 +1,56 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100vh;
+    background-color: #fbe6fb;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(27, 26, 26, 0.331);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .name{
+    margin-top: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:3%;
+  }
+  #dash{
+    font-size: 1.5em;
+    margin-top: 10px;
+  }
+  
+  img{
+    height:30px;
+    margin-top: 0;
+  }
+  .menu {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    font-size: 1em;
+    margin-top: 30%;
+
+    color: #333;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .menu-item a {
+    text-decoration: none;
+    /* margin-top: 10%; */
+    color: inherit;
+  }
+  
+  .menu-item:hover {
+    color: #ff0077;
+    cursor: pointer;
+  }
+  

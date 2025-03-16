@@ -2,13 +2,8 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-<<<<<<< HEAD:frontend/src/pages/Login-User/ULogin.jsx
-
-
-function ULogin() {
-=======
 import axios from 'axios';
-import './Login.css';
+// import './Login.css';
 
 function Login() {
   const [email, setEmail] = useState('');
@@ -43,7 +38,6 @@ function Login() {
     }
   };
 
->>>>>>> backend:frontend/src/pages/Login/Login.jsx
   return (
     <div className="login">
       <h1>Login</h1>
@@ -97,8 +91,4 @@ function Login() {
   );
 }
 
-<<<<<<< HEAD:frontend/src/pages/Login-User/ULogin.jsx
-export default ULogin;
-=======
 export default Login;
->>>>>>> backend:frontend/src/pages/Login/Login.jsx

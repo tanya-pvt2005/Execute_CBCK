@@ -9,7 +9,7 @@ import nykaa from "../../assets/nykaa.png";
 import shein from "../../assets/shein.png";
 import sugar from "../../assets/sugar.png";
 import "./BrandCards.css";
-import FeedbackForm from "../../components/Feedback/FeedbackForm"; // Import the feedback form component
+import Feed from "../Feed/Feed"; // Import the feedback form component
 
 const brands = [
   { name: "Coca-Cola", image: coca },
@@ -48,7 +48,7 @@ function BrandCards() {
       </div>
 
       {selectedBrand && (
-        <FeedbackForm brand={selectedBrand} closeForm={() => setSelectedBrand(null)} />
+        <Feed brand={selectedBrand} closeForm={() => setSelectedBrand(null)} />
       )}
     </div>
   );

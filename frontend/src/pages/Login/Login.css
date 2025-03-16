@@ -1,11 +1,18 @@
 .login {
-    max-width: 40%;
+    max-width: 60%;
     margin: auto;
-    margin-top: 6em;
+    margin-top: 7em;
+
+    /* border: 2px solid red; */
 
     padding: 1em;
 
     text-align: center;
+
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    
 }
 
 .login h1 {
@@ -26,4 +33,14 @@
     margin-right: 15px;
     font-weight: bold;
     border:none;
+}
+
+.login-left {
+    width: 50%;
+}
+
+.login-right {
+    width: 40%;
+    /* background-color: red; */
+    background: url('https://img.freepik.com/premium-vector/person-with-green-blue-logo-that-says-name_1076610-66914.jpg') no-repeat center/cover;
 }

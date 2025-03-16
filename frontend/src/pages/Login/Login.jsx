@@ -142,6 +142,7 @@ function Login() {
     <>
     <Navbar/>
     <div className="login">
+      <div className="login-left">
       <h1>Login</h1>
       <Form className="container" onSubmit={handleSubmit}>
         <Form.Group className="mb-3" controlId="formAccountType">
@@ -188,6 +189,11 @@ function Login() {
       <div className="register">
         <p>Don't have an account? </p>
         <Link to="/register">Register</Link>
+      </div>
+      </div>
+
+      <div className="login-right">
+        
       </div>
     </div>
     </>

@@ -7,7 +7,7 @@ const Sidebar = () => {
   const menuItems = [
     { name: "Feedback Mechanism", icon: <Home />, link: "#" },
     { name: "Consumer Support", icon: <FileText />, link: "#" },
-    { name: "Community", icon: <Users />, link: "#" },
+    { name: "Community", icon: <Users />, link: "/community" },
     { name: "Insights from Data", icon: <BookOpen />, link: "#" },
     { name: "Business Inbox", icon: <MessageCircle />, link: "#" },
   ];

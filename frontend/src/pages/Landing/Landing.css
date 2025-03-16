@@ -19,6 +19,7 @@ body{
     color: white;
     border-radius: 1rem;
     height:60px;
+    width:200px;
     /* border: 2px solid transparent; */
     background: linear-gradient(to right, #5eae21, #70dd12);
     transition: all 0.3s ease;
@@ -35,6 +36,8 @@ body{
   /* Dotted Button */
   .dotted {
     padding: 12px 24px;
+    width:200px;
+
     background-color: white ;
     font-size: 1rem;
     height:60px;

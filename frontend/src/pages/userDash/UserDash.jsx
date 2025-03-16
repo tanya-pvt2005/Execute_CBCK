@@ -18,7 +18,6 @@ function UserDash() {
       </div>
     </div>
 
-    {/* <Profile/> */}
 
 
     </>

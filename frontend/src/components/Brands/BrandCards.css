@@ -1,0 +1,91 @@
+/* Section Wrapper */
+.brand-section {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Title */
+.brand-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Grid Layout - 4x2 */
+.brand-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 20px; /* Space between cards */
+  justify-content: center;
+  padding: 10px;
+}
+
+/* Brand Card */
+.brand-card {
+  background: white;
+  height: 180px; /* Reduced size */
+  width: 180px; /* Reduced size */
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.brand-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Inner Card Layout */
+.brand-card-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Logo Container */
+.brand-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px; /* Reduced size */
+  width: 80px; /* Reduced size */
+  cursor:pointer;
+  margin-bottom: 8px;
+}
+
+/* Brand Logos */
+.brand-logo {
+  height: 90%;
+  object-fit: contain;
+}
+
+/* Brand Name */
+.brand-name p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+/* Responsive - Adjust for smaller screens */
+@media (max-width: 1024px) {
+  .brand-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .brand-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-grid {
+    grid-template-columns: repeat(1, 1fr); /* 1 per row */
+  }
+}

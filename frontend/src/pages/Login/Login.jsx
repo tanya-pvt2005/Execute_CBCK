@@ -143,8 +143,8 @@ function Login() {
     <Navbar/>
     <div className="login">
       <div className="login-left">
-      <h1>Login</h1>
       <Form className="container" onSubmit={handleSubmit}>
+      <h1>Login</h1>
         <Form.Group className="mb-3" controlId="formAccountType">
           <Form.Label>Account Type</Form.Label>
           <Form.Select 

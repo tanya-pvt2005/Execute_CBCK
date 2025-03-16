@@ -108,7 +108,7 @@ function UserRegister() {
     <Container className="d-flex justify-content-center align-items-center vh-100">
       <Row className="w-100">
         <Col md={6} className="mx-auto">
-          <div className="user-register" style={{ background: 'rgba(255, 255, 255, 0.9)' }}>
+          <div className="user-register" style={{ background: 'rgba(255, 255, 255, 0.9)' , marginTop: '-100px', marginLeft:"-100px"}}>
             <div className="user-register-left">
             <h1 className="text-center mb-4">Register</h1>
             <Form onSubmit={handleSubmit}>
